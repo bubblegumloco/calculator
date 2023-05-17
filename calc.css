@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face {
+    font-family: digital;
+    src: url(digital-7.regular.ttf);
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(eq.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+button {
+    color: rgb(88, 87, 87);
+    background-color: rgb(243, 223, 237);
+    border-color: transparent;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: .10s cubic-bezier(0, 0, .6, 1);
+    border: 2px solid rgb(243, 203, 231);
+}
+
+button::before {
+    transform: translate3d(0, .75em, -1em);
+}
+
+button:active {
+    transform: translate(0, .25em);
+}
+
+button:active::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+}
+
+.title {
+    color: rgb(88, 87, 87);
+    text-align: center;
+    margin: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.viewScreen {
+    background-color: rgb(226, 224, 224);
+    height: 74px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    border-color: rgb(251, 144, 235);
+    font-family: digital, 'Orbitron', sans-serif;
+    font-size: 12vh;
+    text-align: end;
+}
+
+.memoryScreen {
+    background-color: rgb(226, 224, 224);
+    height: 3vh;
+    margin: 0 20px 0 20px;
+    border-radius: 10px 10px 0 0;
+    border-color: rgb(251, 144, 235);
+    font-family: digital, 'Orbitron', sans-serif;
+    font-size: 3vh;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: end;
+}
+
+.container {
+    background-color: rgb(255, 201, 236);
+    height: 740px;
+    width: 450px;
+    position: relative;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.controller {
+    background-color: rgb(243, 223, 237);
+    border-radius: 50% 50% 51% 49% / 38% 38% 62% 62% ;
+    height: 76px;
+    width: 105px;
+}
+
+.controllerSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftOfController, .rightOfController {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+/* */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.trigFunctions, .numOpp {
+    display: grid;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.trigFunctions {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.numOpp {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.trigFunctions button {
+    height: 40px;
+}
+
+.numOpp button {
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+.colors {
+    position: relative;
+    background-color: transparent;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#pistachio {
+    left: 23px;
+    bottom: 15px;
+}
+
+#pink {
+    left: 5px;
+    top: 30px;
+}
+
+#lemon {
+    left: 30px;
+    bottom: 10px;
+}
+
+#blue {
+    bottom: 12px;
+    left: 70px;
+}
+
+.pink { 
+    background-color: pink;
+}
+
+.blue {
+    background-color: rgb(90, 206, 235);
+}
+
+.pinkLetters {
+    color: pink;
+}
+
+#inverseTrig {
+    font-size: .75rem;
+}
+
+#blank {
+    border-color: transparent;
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+}

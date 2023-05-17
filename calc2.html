@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+  </head>
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="wrapper">
+          <div class="title">Scientific Calculator</div>
+          <div class="memoryScreen"></div>
+          <div class="viewScreen"></div>
+          <div class="controllerSection">
+            <div class="leftOfController">
+              <button id="resetBtn">Reset</button>
+              <button id="radDegBtn">Rad</button>
+              <button id="anyRoot"><sup>a</sup> √ b</button>
+              <button id="absValBtn">| x |</button>
+            </div>
+            <div class="controller">
+                <div class="colors" id="pink">Pink</div>
+                <div class="colors" id="pistachio">Pistachio</div>
+                <div class="colors" id="blue">Blue</div>
+                <div class="colors" id="lemon">Lemon</div>
+            </div>
+            <div class="rightOfController">
+              <button id="blank"></button>
+              <button id="onBtn">On</button>
+              <button class="engSciBtn" id="engBtn">ENG</button>
+              <button class="engSciBtn" id="sciBtn">SCI</button>
+            </div>
+          </div>
+          <div class="trigFunctions">
+            <button id="sqrtBtn">√</button>
+            <button id="expSq">x²</button>
+            <button class="op" id="anyExpBtn">^</button>
+            <button class="logFun" id="logBtn">log</button>
+            <button class="logFun" id="lnBtn">ln</button>
+            <button id="eulerBtn">e</button>
+            <button class="pos-neg" id="(-)Btn">+/-</button>
+            <button id="hypBtn">hyp</button>
+            <button id="inverseTrig">arcTrig</button>
+            <button class="trigFunc" id="sinBtn">sin</button>
+            <button class="trigFunc" id="cosBtn">cos</button>
+            <button class="trigFunc" id="tanBtn">tan</button>
+            <button id="rclBtn">RCL</button>
+            <button id="factorialBtn">!</button>
+            <button class="parenthesis" id="leftParBtn">(</button>
+            <button class="parenthesis" id="rightParBtn">)</button>
+            <button id="commaBtn">,</button>
+            <button id="piBtn">π</button>
+          </div>
+          <div class="numOpp">
+            <button class="numbers" id="btn7">7</button>
+            <button class="numbers" id="btn8">8</button>
+            <button class="numbers" id="btn9">9</button>
+            <button id="delBtn">⌫</button>
+            <button id="acBtn">AC</button>
+            <button class="numbers" id="btn4">4</button>
+            <button class="numbers" id="btn5">5</button>
+            <button class="numbers" id="btn6">6</button>
+            <button class="op" id="multiplyBtn">X</button>
+            <button class="op" id="divideBtn">÷</button>
+            <button class="numbers" id="btn1">1</button>
+            <button class="numbers" id="btn2">2</button>
+            <button class="numbers" id="btn3">3</button>
+            <button class="op" id="addBtn">+</button>
+            <button class="op" id="subtractBtn">-</button>
+            <button class="numbers" id="btn0">0</button>
+            <button class="numbers" id="decimalBtn">.</button>
+            <button class="op" id="expBtn">EXP</button>
+            <button id="ansBtn">ANS</button>
+            <button id="equalBtn">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
