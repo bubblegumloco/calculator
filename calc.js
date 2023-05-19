@@ -1,3 +1,4 @@
+let onBtn = document.querySelector('#onBtn');
 let numbers = document.querySelectorAll('.numbers');
 let buttons = document.querySelectorAll('button');
 let screen = document.querySelector('.viewScreen');
@@ -37,6 +38,10 @@ let changeTrig = '';
 
 let arr = [];
 screen.textContent = '';
+
+onBtn.addEventListener("click", function(){
+  screen.textContent = 0;
+})
 
 numbers.forEach(number => {
   number.addEventListener('click', e => {
@@ -137,7 +142,7 @@ piBtn.onclick = function(){
 };
 
 eulerBtn.onclick = function(){
-  screen.textContent = eulerBtn.value.substring(0,1);
+  screen.textContent = eulerBtn.value.substring(0,11);
 
   if (a != ''){
     c = eulerBtn.value;
