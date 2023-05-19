@@ -1,7 +1,7 @@
 # Calculator
 
 Get your math homework out and start calculating! This project was used as a cumulative review for HTML, CSS & js. Instead of making a normal calculator, I wanted to 
-challenge myself and take it one step further by creating a scientific calculator. Is is capable of computing basic operations, trigonometric functions, logarithmic 
+challenge myself and take it one step further by creating a scientific calculator. It is capable of computing basic operations, trigonometric functions, logarithmic 
 functions, hyperbolic functions, converting between radian and degree and root functions. 
 
 It was a tall order for a beginner like me but I was able to complete it by taking it step by step. This is the final project of TOP Fundamentals. 
